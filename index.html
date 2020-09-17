@@ -7,21 +7,18 @@
 
     </head>
     <body>
-        <div id="superlogica_planos_script"></div>
+        <div>TODO write content</div>
         <script type="text/javascript">
-            (function() {
-                var appUrl = encodeURIComponent( document.location.href );
-                var iframePlanos = document.createElement("iframe");
-                iframePlanos.setAttribute("frameborder",0);
-                iframePlanos.setAttribute("width","100%");
-                iframePlanos.setAttribute("height",900);
-                iframePlanos.setAttribute("allowtransparency",true);
-                iframePlanos.src="https://douglas08.superlogica.net/clients/areadocliente?url="+appUrl+"";
-                document.getElementById("superlogica_planos_script").appendChild(iframePlanos);
-            }());
+            /*{literal}<![CDATA[*/
+            function renderizarModulo(){
+            superlogica.require("condominios");
+            superlogica.condominios("areadocondomino","","estagiocond","1");
+            }
+            /*]]>{/literal}*/
         </script>
+        <div>
+         <button class="bt-areacondomino" onclick="renderizarModulo();">Área do condômino</button>
+        </div>
     </body>
 
 </html>
-
-
