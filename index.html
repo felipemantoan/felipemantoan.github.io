@@ -1,24 +1,25 @@
-<html>
-    <head>
-        <title>Selvageria</title>
-        <meta charset="ISO-8859-1">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="https://s3-sa-east-1.amazonaws.com/widgets.superlogica.net/embed.js" ></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="superlogica_planos_script"></div>
+<script type="text/javascript">
+(function() {
+var appUrl = encodeURIComponent( document.location.href );
+var iframePlanos = document.createElement("iframe");
+iframePlanos.setAttribute("frameborder",0);
+iframePlanos.setAttribute("width","100%");
+iframePlanos.setAttribute("height",900);
+iframePlanos.src="https://caio21.superlogica.net/clients/areadocliente/publico/grades?id=3&url=%22+appUrl+"";
+document.getElementById("superlogica_planos_script").appendChild(iframePlanos);
+}());
+</script>
 
-    </head>
-    <body>
-        <div>Morena selvagem S2</div>
-        <script type="text/javascript">
-            /*{literal}<![CDATA[*/
-            function renderizarModulo(){
-            superlogica.require("condominios");
-            superlogica.condominios("areadocondomino","","producaocond","1");
-            }
-            /*]]>{/literal}*/
-        </script>
-        <div>
-         <button class="bt-areacondomino" onclick="renderizarModulo();">Área do condômino</button>
-        </div>
-    </body>
 
+
+</body>
 </html>
